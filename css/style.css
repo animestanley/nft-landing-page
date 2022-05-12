@@ -22,8 +22,9 @@
 }
 
 body {
-  /* background-color: var(--bg-color); */
-  background: linear-gradient(to bottom, #B721FF, #2AF598, #fec051, #FEE140, #FA709A );
+  /*background-color: var(--bg-color);*/
+/*  background: linear-gradient(to bottom, #B721FF, #2AF598, #fec051, #FEE140, #FA709A ); */
+  background: linear-gradient(to right bottom, rgba(255,255,255,0.2), #21D4FD 75%);
   display: flex;
   flex-flow: column;
   height: 100vh;
@@ -61,6 +62,10 @@ header .container {
   align-items: center;
 }
 
+img.logo {
+  height: 60px;
+}
+
 /* BUTTONS */
 
 .btn {
@@ -81,6 +86,29 @@ header .container {
   outline: none;
 }
 .btn:hover {
+  box-shadow: none;
+}
+
+.btn-disabled {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--btn-bg-color);
+  color: var(--accent-color);
+  font-family: var(--font-secondary);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  box-shadow: 4px 4px 0 0 var(--accent-color);
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  outline: none;
+  color: darkgrey;
+}
+
+.btn-disabled:hover {
   box-shadow: none;
 }
 
