@@ -22,7 +22,8 @@
 }
 
 body {
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
+  background: linear-gradient(to right bottom, rgba(255,255,255,0.2), #21D4FD 75%);
   display: flex;
   flex-flow: column;
   height: 100vh;
